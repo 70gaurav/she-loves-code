@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 10rem;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+.menu a{
+    color: white;
+    margin: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.menu a:hover{
+    color: brown;
+}
+.menu .submenu {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 0.5rem;
+    top: 25px;
+    left: 15px;
+}
+.menu .submenu li{
+    padding: 0.5rem;
+}
+.menu li:hover .submenu{
+    display: flex;
+}
+.logo img{
+    width: 120px;
+}
+.menu li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: brown;
+    bottom: -10px;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+.menu a:hover::before{
+    width: 100%;
+    height: 2px;
+    left: 0;
+    right: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfebf7;
+    padding: 1rem 10rem;
+}
+.header .girl img{
+    width: 500px;
+    border-radius: 10px;
+}
+.girl, .content{
+    width: 50%;
+}
+.header .content{
+    text-align: center;
+    line-height: 50px;
+}
+.apply{
+    background-color: black;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+}
+.apply:hover{
+    background-color: pink;
+    transition: all 0.4s ease;
+}
+.note{
+    padding: 4rem 10rem;
+}
+.note h3, p, h4{
+    margin:2rem 0;
+}
+.note p{
+    word-spacing: 2px;
+}
+.section1{
+    background-color: #cfebf7;
+    padding: 2rem 10rem;
+}
+.course{
+    display: flex;
+    background-color: white;
+}
+.development,.cloudcomputing{
+    width: 50%;
+    padding: 1.5rem;
+}
+.development img ,.cloudcomputing img{
+    width: 98%;
+    border-radius: 10px;
+}
+.potential{
+    text-align: center;
+}
+.potential h1, h3{
+    margin: 2rem 0;
+}
+.cloudcomputing h2 , .development h2{
+    margin: 1rem 0;
+}
+.cloudcomputing ul{
+    margin: 4rem 0 2rem 0;
+}
+.development ul{
+    margin: 2rem 0 2rem 0;
+}
+.cloudcomputing p , .development p{
+    line-height: 30px;
+}
+.know{
+    background-color: pink;
+    color: black;
+    padding: 0.5rem;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+.know:hover{
+    background-color: burlywood;
+}
+
